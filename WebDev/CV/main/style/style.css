@@ -1,0 +1,154 @@
+body{
+    background-color: coral;
+}
+.banner{/*this is for banner/header*/
+    background-color: black;
+    box-shadow: 5px 5px 2px black;
+    padding: 0px;
+    margin: auto;
+}
+.banner img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.nav{/*this is for navigation bar*/
+    background-image: linear-gradient(to bottom right, red, yellow);
+    box-shadow: 5px 5px 2px black;
+    border: 2px solid black;
+    overflow: hidden;
+    margin: auto;
+}
+.nav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow: 3px 3px 2px black;
+}
+.nav a:hover{/*this will highlight the selected category when hovered with cursor*/
+    background-color: #ddd;
+    color: black;
+}
+h2{
+    text-align: left;
+    overflow: hidden;
+    background-color: coral;
+    margin: initial;
+}
+#bio{
+    background-color: white;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 150px;
+    text-align: center;
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+
+#bio img{
+    width: 25%;
+    height: auto;
+    border: 3px solid red;
+    box-shadow: 3px 3px 2px black;
+}
+#bio table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#bio tr{
+    text-align: left;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#bio th{
+    text-align: left;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.row:after {/*this is to contain #edu, #exp, and #skills. this will cause that no content could go behind said ids*/
+    content: "";
+    display: table;
+    clear: both;
+}  
+#edu{
+    background-color: white;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 50px;
+    text-align: center;
+    width: 25%;
+    height: auto;
+    margin: auto;
+    float: left;
+}
+#edu table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#edu tr{
+    text-align: left;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#edu th{
+    text-align: left;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+#exp{
+    background-color: white;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 50px;
+    text-align: center;
+    width: 25%;
+    height: auto;
+    margin: auto;
+    float: left;
+}
+ul {
+    text-align: left;
+}
+#skills{
+    background-color: white;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 50px;
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    float: left;
+}
+h3{
+    text-align: center;
+    margin: auto;
+}
+#contact{
+    background-color: white;
+    box-shadow: 5px 5px 2px black;
+    border-radius: 150px;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    margin: auto;
+}
+#contact a{
+    color: blue;
+    text-decoration: none;
+}
+.footer {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    font-size: small;
+}

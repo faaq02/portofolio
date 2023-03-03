@@ -1,0 +1,266 @@
+html{
+    scroll-behavior: smooth;        /* jump to section smoothly*/
+}  
+body{
+    background-color: white;
+    margin: 0px;
+}
+.dark-mode{                               /* for darkmode*/
+    background-color: black;
+    color: white;
+}
+.dark-mode .nav{
+    background-color: gray;
+}
+.dark-mode .nav a{
+    color: white;
+}
+.dark-mode #profile{
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+}
+.dark-mode #slideshow-container{
+    border: 0.5px solid white;
+}
+.dark-mode #profile-table{
+    border: 1.5px solid white;
+}
+.dark-mode #profile-table tr{
+    border: 1.5px solid white;
+}
+.dark-mode #profile-table th{
+    border: 1.5px solid white;
+}
+.dark-mode .timeline::after{
+    background-color: white;
+}
+.dark-mode .container{
+    border: 1px solid white;
+}
+.dark-mode #rectangle{
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+}
+.dark-mode #rectangle a{
+    color: cadetblue;
+}
+*{
+    box-sizing: border-box;
+}
+.header{                                   /* for scroll bar*/
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.progress-container{
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+.progress-bar{
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+}
+@media screen and (max-height: 450px){     /* for side bar*/
+    .nav {padding-top: 15px;}
+    .nav a {font-size: 18px;}
+}
+.nav{
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+.nav a{
+    padding: 6px 8px 6px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+.nav a:hover{
+    color: #f1f1f1;
+    border-bottom: 3px solid white;
+}
+.nav .closebtn{
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-left: 165px;
+}
+#all{                                           /* to group all elements for push functionality*/
+    transition: margin-left .5s;
+    padding: 16px;
+}
+#profile{                                                /* for profile card*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.title{
+    color: grey;
+    font-size: 18px;
+}
+#slideshow-container{                                   /* for slide show*/
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 5px;
+    border: 0.5px solid black;
+}
+.slides{
+    display: none;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+h3{
+    padding: 0px;
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#profile-table{                                      /* for table*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    text-align: center;
+    border: 1.5px solid black;
+    border-collapse: collapse;
+}
+#profile-table tr{
+    text-align: left;
+    border: 1.5px solid black;
+    border-collapse: collapse;
+}
+#profile-table th{
+    text-align: left;
+    border: 1.5px solid black;
+    border-collapse: collapse;
+}  
+.timeline{                                     /* for timeline*/
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.timeline::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.container{
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    border: 1px solid black;
+}
+.container::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: gray;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.left {
+    left: 0;
+}
+.right {
+    left: 50%;
+}
+.right::after{
+    left: -16px;
+}
+@media screen and (max-width: 600px){                /* for timeline (small screen)*/
+    .timeline::after{
+        left: 31px;
+    }
+    .container{
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    .left::after, .right::after{
+        left: 15px;
+    }
+    .right{
+        left: 0%;
+    }
+}
+h2{
+    padding: 0px;
+    margin: 0px;
+}
+h5{
+    padding: 0px;
+    margin: 0px;
+}
+.box{                                                    /* for skill bar bar*/
+    width: 100%;
+    background-color: #ddd;
+}
+  
+.skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.c{
+    width: 80%; background-color: #4CAF50;
+}
+.html{
+    width: 70%; background-color: #4CAF50;
+}
+.css{
+    width: 70%; background-color: #4CAF50
+}
+.js{
+    width: 60%; background-color: #4CAF50;
+}
+#rectangle{                                                   /* for contact*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+#rectangle a{
+    color: blue;
+    text-decoration: none;
+}
+.footer {                                                       /* for footer*/
+    text-align: center;
+    overflow: hidden;
+    font-size: small;
+}
